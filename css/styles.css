@@ -131,3 +131,31 @@ header {
   opacity: 0;
   visibility: hidden;
 }
+
+
+/* *************** Dark btn *********** */
+
+
+#dark-btn{
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--main-color);
+  border:none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1vh;
+  left: 1vw;
+  outline: none;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+#dark-btn:hover{
+  background-color: var(--second-color);
+}
+
+.dark{
+  background-color: var(--second-color);
+  color:var(--main-color);
+}

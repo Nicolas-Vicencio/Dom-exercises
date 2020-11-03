@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" />
     <title>Dom Exercises</title>
   </head>
-  <body>
+  <body >
     <header>
       <h1>Dom Exercises</h1>
     </header>
@@ -23,9 +23,9 @@
             <li><a href="#section1">Clock & Digital Alarm</a></li>
             <li><a href="#section2">Keyboard Events</a></li>
             <li><a href="#section3">Countdown</a></li>
-            <li><a href="#section4">Section 4</a></li>
-            <li><a href="#section5">Section 5</a></li>
-            <li><a href="#section6">Section 6</a></li>
+            <li><a href="#section4">Responsive JavaScript</a></li>
+            <li><a href="#section5">Responsive Tester</a></li>
+            <li><a href="#section6">Device Detection (User Agent)</a></li>
             <li><a href="#section7">Section 7</a></li>
             <li><a href="#section8">Section 8</a></li>
             <li><a href="#section9">Section 9</a></li>
@@ -38,7 +38,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main data-dark>
         <div class="section" id="section1">
             <h2>Clock & Digital Alarm</h2>
             <div class="clock"></div>
@@ -58,13 +58,27 @@
             <div class="countdown"></div>
         </div>
         <div class="section" id="section4">
-            <h2>section 4</h2>
+            <h2>Responsive JavaScript</h2>
+            <div id="youtube"></div>
+            <div id="g-map"></div>
+
         </div>
         <div class="section" id="section5">
-            <h2>section 5</h2>
+            <h2>Responsive Tester</h2>
+            <form id="form-tester">
+            <input type="url" name="direction" placeholder="Insert url...">
+            <br>
+            <input type="text" name="height" placeholder="Insert height...">
+            <br>
+            <input type="text" name="width" placeholder="Insert width...">
+            <br>
+            <input type="submit" value="Try" id="tester-try-btn">
+            <input type="button" value="Close" id="tester-close-btn">
+        </form>
         </div>
         <div class="section" id="section6">
-            <h2>section 6</h2>
+            <h2>Device Detection (User Agent)</h2>
+            <div id='user-agent-text'></div>
         </div>
         <div class="section" id="section7">
             <h2>section 7</h2>
@@ -95,6 +109,7 @@
         </div>
     </main>
     <button class="scroll-top" >&#11014</button>
+    <button id="dark-btn">🌙</button>
     <script src="js/index.js" type="module"></script>
   </body>
 </html>
