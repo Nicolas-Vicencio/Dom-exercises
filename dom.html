@@ -20,9 +20,9 @@
 
     <nav class="panel">
         <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section1">Clock & Digital Alarm</a></li>
+            <li><a href="#section2">Keyboard Events</a></li>
+            <li><a href="#section3">Countdown</a></li>
             <li><a href="#section4">Section 4</a></li>
             <li><a href="#section5">Section 5</a></li>
             <li><a href="#section6">Section 6</a></li>
@@ -40,13 +40,22 @@
 
     <main>
         <div class="section" id="section1">
-            <h2>section 1</h2>
+            <h2>Clock & Digital Alarm</h2>
+            <div class="clock"></div>
+            <button class="clockON">Start Clock</button>
+            <button class="clockOff">Stop Clock</button>
+            <button class="alarmON">Start Alarm</button>
+            <button class="alarmOff">Stop Alarm</button>
         </div>
         <div class="section" id="section2">
-            <h2>section 2</h2>
+            <h2>Keyboard Events</h2>
+            <div class='stage'>
+                <div class="ball"></div>
+            </div>
         </div>
         <div class="section" id="section3">
-            <h2>section 3</h2>
+            <h2>Countdown</h2>
+            <div class="countdown"></div>
         </div>
         <div class="section" id="section4">
             <h2>section 4</h2>
@@ -85,6 +94,7 @@
             <h2>section 15</h2>
         </div>
     </main>
+    <button class="scroll-top" >&#11014</button>
     <script src="js/index.js" type="module"></script>
   </body>
 </html>
