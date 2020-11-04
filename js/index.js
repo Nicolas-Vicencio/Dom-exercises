@@ -7,6 +7,7 @@ import darkTheme from './dark_theme.js'
 import { responsive } from './responsive.js'
 import tester from './responsive_tester.js'
 import deviceDetection from './device_detection.js'
+import connectionDetection from './conection_detection.js'
 
 const d = document
 
@@ -33,7 +34,7 @@ d.addEventListener('DOMContentLoaded', e=>{
 
   tester('form-tester', '#tester-try-btn', '#tester-close-btn')  
   deviceDetection('user-agent-text')
-  })
+})
 
 
 d.addEventListener('keydown', e =>{
@@ -43,3 +44,4 @@ d.addEventListener('keydown', e =>{
 }
 )
 darkTheme('dark-btn', '[data-dark]')
+connectionDetection()
