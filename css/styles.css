@@ -159,3 +159,18 @@ header {
   background-color: var(--second-color);
   color:var(--main-color);
 }
+
+#green,
+#red{
+  height: 70px;
+  width: 100%;
+  background-color: green;
+  border-radius: 10px;
+  margin: 10px;
+  line-height: 70px;
+  color: white;
+}
+
+#red{
+  background-color: red;
+}

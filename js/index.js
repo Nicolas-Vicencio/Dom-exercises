@@ -6,6 +6,7 @@ import scrollTop from './scroll_top.js'
 import darkTheme from './dark_theme.js'
 import { responsive } from './responsive.js'
 import tester from './responsive_tester.js'
+import deviceDetection from './device_detection.js'
 
 const d = document
 
@@ -31,6 +32,7 @@ d.addEventListener('DOMContentLoaded', e=>{
     )
 
   tester('form-tester', '#tester-try-btn', '#tester-close-btn')  
+  deviceDetection('user-agent-text')
   })
 
 
