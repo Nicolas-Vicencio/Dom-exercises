@@ -8,6 +8,10 @@ import { responsive } from './responsive.js'
 import tester from './responsive_tester.js'
 import deviceDetection from './device_detection.js'
 import connectionDetection from './conection_detection.js'
+import webcam from './cam_detection.js'
+import geolocalization from './geolocalization.js'
+import filterCards from './search_filter.js'
+import digitalDraw from './Digital_draw.js'
 
 const d = document
 
@@ -34,6 +38,10 @@ d.addEventListener('DOMContentLoaded', e=>{
 
   tester('form-tester', '#tester-try-btn', '#tester-close-btn')  
   deviceDetection('user-agent-text')
+  webcam('webcam')
+  geolocalization('geolocalization')
+  filterCards('.card-filter','.card')
+  digitalDraw('.draw-items li', '.draw-btn')
 })
 
 
