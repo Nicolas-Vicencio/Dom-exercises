@@ -41,6 +41,11 @@ header {
   top: 0;
   text-align: center;
   z-index: 998;
+  height: 5rem;
+}
+
+header h1{
+  line-height: 10px;
 }
 
 .panel-btn {
@@ -80,6 +85,8 @@ header {
   padding: 0;
 }
 
+
+
 .panel ul li a {
   display: block;
   color: var(--main-color);
@@ -88,9 +95,11 @@ header {
   padding: 2rem;
   transition: all 300ms ease;
   text-emphasis: weitgh;
+ 
 }
 
-.panel ul li a:hover {
+.panel ul li a:hover,
+.panel a.active{
   background-color: var(--main-color);
   color: var(--second-color);
 }
@@ -287,6 +296,67 @@ figcaption{
 
 .slider-btns a:hover{
   color: gray;
+}
+
+
+/* ***************Scroll Spy **************** */
+
+
+@media screen and (min-width:1024px){
+ body {
+   display: grid;
+   grid-template-columns: 80%, 20%;
+   grid-template-rows: 4rem, auto ;
+   grid-template-areas:
+   'header header'
+   'main panel'
+    ;
+ }
+
+ header {
+   grid-area: header ;
+ }
+
+ main {
+   grid-area: main;
+ }
+
+ .panel{
+   grid-area: panel;
+   margin:0;
+   position: fixed;
+   top: 4rem;
+   right: 0;
+   left :80%;
+   visibility: visible;
+   opacity: 1;
+   background-color: var(--second-color);
+   align-self: flex-start;
+   justify-content: flex-start;
+   z-index: 997;
+   overflow-y: hidden;
+   
+ }
+
+ .panel ul{
+   justify-content: flex-start;
+ }
+
+ .panel ul li a{
+   font-size: 1rem;
+   text-align: right;
+   padding: .97rem;
+ }
+
+ .panel-btn{
+   visibility: hidden;
+ }
+
+ .scroll-top{
+  right: initial;
+  left: calc(1vw + 4.7rem);
+ }
+
 }
 
 

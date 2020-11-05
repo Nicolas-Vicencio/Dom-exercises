@@ -13,6 +13,7 @@ import geolocalization from './geolocalization.js'
 import filterCards from './search_filter.js'
 import digitalDraw from './Digital_draw.js'
 import slider from './slider.js'
+import scrollSpy from './scroll_spy.js'
 
 const d = document
 
@@ -44,6 +45,7 @@ d.addEventListener('DOMContentLoaded', e=>{
   filterCards('.card-filter','.card')
   digitalDraw('.draw-items li', '.draw-btn')
   slider()
+  scrollSpy()
 })
 
 
