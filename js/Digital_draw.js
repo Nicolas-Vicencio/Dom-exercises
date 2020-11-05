@@ -2,7 +2,6 @@ const d = document
 
 export default function digitalDraw(elements, btn){
   const $el = d.querySelectorAll(elements)
-  console.log($el);
   const draw = () => {
     let winner = Math.floor(Math.random() * $el.length )
     
