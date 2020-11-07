@@ -32,8 +32,8 @@
             <li><a data-scroll-spy href="#section10">Search Filter</a></li>
             <li><a data-scroll-spy href="#section11">Digital Draw</a></li>
             <li><a data-scroll-spy href="#section12">Responsive Slider</a></li>
-            <li><a data-scroll-spy href="#section13">Section 13</a></li>
-            <li><a data-scroll-spy href="#section14">Section 14</a></li>
+            <li><a data-scroll-spy href="#section13">Smart Video</a></li>
+            <li><a data-scroll-spy href="#section14">Contact Form</a></li>
             <li><a data-scroll-spy href="#section15">Section 15</a></li>
         </ul>
     </nav>
@@ -174,10 +174,49 @@
             </div>
         </div>
         <div class="section" data-scroll-spy id="section13">
-            <h2>section 13</h2>
+            <h2>Smart Video</h2>
+            <video id='video'  data-smart-video muted controls src="assets/wingsuit.mp4" ></video>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <video id='video' data-smart-video muted controls src="assets/wingsuit.mp4" ></video>
         </div>
         <div class="section" data-scroll-spy id="section14">
-            <h2>section 14</h2>
+            <h2>Contact Form</h2>
+            <form class="contact-form">
+                <legend>Send us your comments</legend>
+                <input type="text" name="name" placeholder="Insert Name..." title="The name only accepts letters and blank spaces" pattern='^[a-zA-zñáéíóú\s]+$'required>               
+                <br>
+                <input type="email" name='email' placeholder="Insert Email..." title="The email is invalid" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <br>
+                <input type="text" name="subject" placeholder="Subject..." title="The subject is required" required >
+                <br>
+                <textarea name="comments" id="contact-form-area" cols="50" rows="5" placeholder="Comments..." data-pattern='^.{1,255}$' title="The text content can't contain more than 255 characters" required></textarea>
+                <br>
+                <input type="submit" name="send" value="Send">
+                <div class="contact-form-loader">
+                    <img src="assets/ball-triangle.svg" alt="Loading">
+                </div>
+                <div class="contact-form-response">
+                    <p>Data has been sent</p>
+                </div>
+                
+            </form>
         </div>
         <div class="section" data-scroll-spy id="section15">
             <h2>section 15</h2>

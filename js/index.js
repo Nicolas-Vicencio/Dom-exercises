@@ -14,6 +14,8 @@ import filterCards from './search_filter.js'
 import digitalDraw from './Digital_draw.js'
 import slider from './slider.js'
 import scrollSpy from './scroll_spy.js'
+import smartVideo from './smart_video.js'
+import formValidation from './contact_form.js'
 
 const d = document
 
@@ -46,6 +48,8 @@ d.addEventListener('DOMContentLoaded', e=>{
   digitalDraw('.draw-items li', '.draw-btn')
   slider()
   scrollSpy()
+  smartVideo()
+  formValidation()
 })
 
 
