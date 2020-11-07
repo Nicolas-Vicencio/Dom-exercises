@@ -34,7 +34,7 @@
             <li><a data-scroll-spy href="#section12">Responsive Slider</a></li>
             <li><a data-scroll-spy href="#section13">Smart Video</a></li>
             <li><a data-scroll-spy href="#section14">Contact Form</a></li>
-            <li><a data-scroll-spy href="#section15">Section 15</a></li>
+            <li><a data-scroll-spy href="#section15">Narrator</a></li>
         </ul>
     </nav>
 
@@ -198,7 +198,7 @@
         </div>
         <div class="section" data-scroll-spy id="section14">
             <h2>Contact Form</h2>
-            <form class="contact-form">
+            <form class="contact-form" >
                 <legend>Send us your comments</legend>
                 <input type="text" name="name" placeholder="Insert Name..." title="The name only accepts letters and blank spaces" pattern='^[a-zA-zñáéíóú\s]+$'required>               
                 <br>
@@ -209,17 +209,26 @@
                 <textarea name="comments" id="contact-form-area" cols="50" rows="5" placeholder="Comments..." data-pattern='^.{1,255}$' title="The text content can't contain more than 255 characters" required></textarea>
                 <br>
                 <input type="submit" name="send" value="Send">
-                <div class="contact-form-loader">
+                <div class="contact-form-loader none">
                     <img src="assets/ball-triangle.svg" alt="Loading">
                 </div>
-                <div class="contact-form-response">
+                <div class="contact-form-response none">
                     <p>Data has been sent</p>
                 </div>
                 
             </form>
         </div>
         <div class="section" data-scroll-spy id="section15">
-            <h2>section 15</h2>
+            <h2>Narrator</h2>
+            <select id="speech-select">
+                <option value="">---Chose language voice---</option>
+            </select>
+            <br>
+            <br>
+            <textarea name="speech-text" id="speech-text" cols="30" rows="10" placeholder="Insert text..."></textarea>
+            <br>
+            <br>
+            <button id="speech-btn">Read Text</button>
         </div>
     </main>
     <button class="scroll-top" >&#11014</button>

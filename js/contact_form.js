@@ -31,6 +31,25 @@ d.addEventListener('keyup', e=>{
    
 
   }
+
+})
+
+
+d.addEventListener('submit', e =>{
+  e.preventDefault()
+  const $loader = d.querySelector('.contact-form-loader'),
+  $response = d.querySelector('.contact-form-response')
+
+  $loader.classList.remove('none')
+
+  setTimeout(() => {
+    $loader.classList.add('none')
+    $response.classList.remove('none')
+    $form.reset()
+    setTimeout(() => $response.classList.add('none'),3000)
+  }, 3000);
+
+
 })
 
 }

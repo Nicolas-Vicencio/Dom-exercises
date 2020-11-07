@@ -16,6 +16,7 @@ import slider from './slider.js'
 import scrollSpy from './scroll_spy.js'
 import smartVideo from './smart_video.js'
 import formValidation from './contact_form.js'
+import narrator from './narrador.js'
 
 const d = document
 
@@ -61,3 +62,4 @@ d.addEventListener('keydown', e =>{
 )
 darkTheme('dark-btn', '[data-dark]')
 connectionDetection()
+narrator()
